@@ -1,0 +1,87 @@
+body{
+    background-image: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+header, form{
+    text-align:center;
+}
+
+header > h2{
+    color: white;
+    font-size: 1.8em;
+}
+
+input.todo-input{
+    width: 25%;
+}
+
+form > input, button.todo-button{
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button.todo-button{
+    background: #fcd2e7;
+    color: #33ccff;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    color: #fcd2e7;
+    background: #33ccff;
+    cursor: pointer;
+}
+
+div.todo-div{
+    width: 20%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+}
+
+.deleted{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+button.check-button{
+    margin-left: auto;
+}
+
+ul.todo-list li{
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+button.check-button{
+    background-color: #4CAF50;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+button.check-button:hover{
+    background-color: #34d13a;
+}
+
+
+button.trash-button{
+    background-color: #df2e3c;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+button.trash-button:hover{
+    background-color: #ff0015;
+    color: #fff;
+}
+
+div.todo-completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+    
+}
